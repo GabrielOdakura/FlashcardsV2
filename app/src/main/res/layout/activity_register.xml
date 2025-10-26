@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fffaf0">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="298dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="85dp"
+        android:text="Bem Vindo ao \nMemorize+"
+        android:textAlignment="center"
+        android:textSize="46sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/nicknameInputRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailInputRegister"
+        android:layout_width="289dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textColor="#A29C9C"
+        app:layout_constraintBottom_toTopOf="@+id/passwordInputRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nicknameInputRegister" />
+
+    <EditText
+        android:id="@+id/nicknameInputRegister"
+        android:layout_width="289dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="61dp"
+        android:ems="10"
+        android:hint="Apelido"
+        android:inputType="text"
+        android:textColor="#A29C9C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/passwordInputRegister"
+        android:layout_width="289dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="123dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:textColor="#A29C9C"
+        app:layout_constraintBottom_toTopOf="@+id/registerButtonRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/registerButtonRegister"
+        android:layout_width="168dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="85dp"
+        android:background="@drawable/button_gradient"
+        android:text="Cadastrar"
+        android:textSize="26sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

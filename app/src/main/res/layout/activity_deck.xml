@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fffaf0">
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="168dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/button_gradient"
+        android:text="Confirmar"
+        android:textSize="26sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="46dp"
+        android:background="@drawable/box_background"
+        android:gravity="center"
+        android:text="Pergunta"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flashcardCount" />
+
+    <TextView
+        android:id="@+id/flashcardCount"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginEnd="145dp"
+        android:text="x/x"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deckTitle" />
+
+    <TextView
+        android:id="@+id/showAnswerText"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Toque para ver a resposta"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/questionText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/deckTitle"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="175dp"
+        android:text="Tema"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="406dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="3dp"
+        android:text="Memorize+"
+        android:textAlignment="viewStart"
+        android:textSize="46sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/answerInput"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="Resposta..."
+        android:inputType="text"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/confirmButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionText" />
+
+    <Button
+        android:id="@+id/addFlashcardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="63dp"
+        android:background="@android:color/transparent"
+        android:text="+"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/questionText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/deckTitle"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
